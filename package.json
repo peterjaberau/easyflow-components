@@ -1,0 +1,33 @@
+{
+  "name": "easyflow-packages",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/easyflow-packages.umd.js",
+  "module": "./dist/easyflow-packages.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/easyflow-packages.es.js",
+      "require": "./dist/easyflow-packages.umd.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.2"
+  }
+}
